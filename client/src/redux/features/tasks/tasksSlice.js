@@ -8,7 +8,7 @@ const taskSlice = createSlice({
 	name: "tasksSlice",
 	initialState,
 	reducers: {
-		addTask: (state, { payload }) => {
+		addTasks: (state, { payload }) => {
 			if (state.tasks.length === 0) {
 				state.tasks.push({ id: 1, status: "painding", ...payload });
 			} else {
