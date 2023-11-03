@@ -10,8 +10,16 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
 
 	return (
 		<Modal isOpen={isOpen} setIsOpen={setIsOpen} title="Programming Hero">
-			<form onSubmit={() => onSubmit}>
-				<input type="text" {...register("name")} />
+			<form onSubmit={handleSubmit(onSubmit)}>
+				<div className="flex flex-col gap-3">
+					<label htmlFor="title">Title</label>
+					<input
+						type="text"
+						id="title"
+						className="w-full rounded-md"
+						{...register("name")}
+					/>
+				</div>
 				<button type="submit">Submit</button>
 			</form>
 		</Modal>
