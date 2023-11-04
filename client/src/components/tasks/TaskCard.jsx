@@ -12,7 +12,7 @@ const TaskCard = ({ task }) => {
 	} else if (task.status === "running") {
 		updatedStatus = "done";
 	} else {
-		updatedStatus = "arrive";
+		updatedStatus = "archive";
 	}
 
 	return (
