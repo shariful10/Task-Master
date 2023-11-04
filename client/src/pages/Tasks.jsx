@@ -61,7 +61,7 @@ const Tasks = () => {
 						</div>
 						<div className="space-y-3">
 							{tasks.map((item) => (
-								<TaskCard key={item.id} />
+								<TaskCard key={item.id} task={item} />
 							))}
 						</div>
 					</div>
@@ -73,8 +73,9 @@ const Tasks = () => {
 							</p>
 						</div>
 						<div className="space-y-3">
-							<TaskCard />
-							<TaskCard />
+							{tasks.map((item) => (
+								<TaskCard key={item.id} task={item} />
+							))}
 						</div>
 					</div>
 					<div className="relative h-[800px] overflow-auto">
@@ -85,7 +86,9 @@ const Tasks = () => {
 							</p>
 						</div>
 						<div className="space-y-3">
-							<TaskCard />
+							{tasks.map((item) => (
+								<TaskCard key={item.id} task={item} />
+							))}
 						</div>
 					</div>
 				</div>
