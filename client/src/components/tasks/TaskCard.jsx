@@ -13,7 +13,7 @@ const TaskCard = ({task}) => {
 					<button title="Delete">
 						<TrashIcon className="h-5 w-5 text-red-500" />
 					</button>
-					<button title="In progress">
+					<button title="Update Status">
 						<ArrowRightIcon className="h-5 w-5 text-primary" />
 					</button>
 				</div>

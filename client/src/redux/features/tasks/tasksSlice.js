@@ -31,12 +31,12 @@ const taskSlice = createSlice({
 				});
 			}
 		},
-		removeTask: (state, payload) => {
+		removeTask: (state, { payload }) => {
 			state.tasks.filter((item) => item.id !== payload);
 		},
 	},
 });
 
-export const { addTasks } = taskSlice.actions;
+export const { addTasks, removeTask } = taskSlice.actions;
 
 export default taskSlice.reducer;
